@@ -240,6 +240,7 @@ img {
 .features {
   padding-bottom: 47px;
 }
+
 .datails-list {
   --card-list: 4;
 }
@@ -269,6 +270,26 @@ img {
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
+}
+.work-pic {
+  position: relative;
+}
+
+.work-description {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.description-text {
+  font-size: inherit;
+  color: var(--primary-color);
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 /* ========Team section======== */
 .team {
@@ -428,7 +449,7 @@ img {
 .portfolio-text {
   font-size: 16px;
 }
-.team-list-item-img-wrapper {
+.portfolio-list-img-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -447,7 +468,7 @@ img {
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 300ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
